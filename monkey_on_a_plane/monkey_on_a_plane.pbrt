@@ -1,0 +1,86 @@
+Film "image" "integer xresolution" [480] "integer yresolution" [480] "string filename" "monkey_on_a_plane.exr"
+PixelFilter "box" "float xwidth" [0.5] "float ywidth" [0.5] 
+Accelerator "bvh" 
+"string splitmethod" "sah"
+"integer maxnodeprims" [4]
+Sampler "halton"
+"integer pixelsamples" [256]
+"bool samplepixelcenter" "false"
+Integrator "path"
+"integer maxdepth" [10]
+Scale -1 1 1 #avoid the 'flipped image' bug..
+LookAt	7.358891487121582 -6.925790786743164 4.958309173583984
+	6.707333087921143 -6.311620235443115 4.51303768157959
+	-0.32401347160339355 0.305420845746994 0.8953956365585327
+
+Camera "perspective"
+"float fov" [22.895194130645738]
+WorldBegin
+
+	AttributeBegin
+		Transform [26.067110 0.000000 0.000000 0.000000 0.000000 25.717493 0.000000 0.000000 0.000000 0.000000 0.067538 0.000000 0.000000 0.000000 0.000000 1.000000 ]
+		Material "matte"		
+		"float sigma" [0.0]		
+		"color Kd" [ 0.46656912565231323 0.7404197454452515 0.8000000715255737]		
+		Shape "plymesh" "string filename" ["meshes/00001/Cube_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [0.880489 0.474067 0.000000 0.000000 -0.404214 0.750750 -0.522481 0.000000 -0.247691 0.460038 0.852651 0.000000 0.307292 0.000000 0.600590 1.000000 ]
+		Material "matte"		
+		"float sigma" [0.0]		
+		"color Kd" [ 0.8000000715255737 0.017470646649599075 0.0]		
+		Shape "plymesh" "string filename" ["meshes/00001/Suzanne_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [9.877465 0.000000 0.000000 0.000000 0.000000 -2.491389 2.715143 0.000000 0.000000 -1.256957 -1.153371 0.000000 0.000000 4.977257 9.703831 1.000000 ]
+		AreaLightSource "diffuse" "rgb L" [ 1.0 1.0 1.0 ]		
+		Shape "trianglemesh"
+		"point P" [
+		-1.0 -1.0 0.0 1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 1.0 0.0		
+		]
+		"normal N" [
+		0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0		
+		]
+		"float st" [
+		0.0 0.0 
+		1.0 0.0 
+		1.0 1.0 
+		0.0 0.0 
+		1.0 1.0 
+		0.0 1.0 
+		]
+		"integer indices" [
+		0 1 2 3 4 5 
+		]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [9.877465 0.000000 0.000000 0.000000 0.000000 -1.459853 -3.383466 0.000000 0.000000 1.566353 -0.675829 0.000000 0.000000 -8.263788 8.074286 1.000000 ]
+		AreaLightSource "diffuse" "rgb L" [ 1.0 1.0 1.0 ]		
+		Shape "trianglemesh"
+		"point P" [
+		-1.0 -1.0 0.0 1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 1.0 0.0		
+		]
+		"normal N" [
+		0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0		
+		]
+		"float st" [
+		0.0 0.0 
+		1.0 0.0 
+		1.0 1.0 
+		0.0 0.0 
+		1.0 1.0 
+		0.0 1.0 
+		]
+		"integer indices" [
+		0 1 2 3 4 5 
+		]
+	AttributeEnd
+	
+
+WorldEnd
