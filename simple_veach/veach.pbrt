@@ -1,0 +1,141 @@
+Film "image" "integer xresolution" [480] "integer yresolution" [480] "string filename" "simple_veach00001.exr"
+PixelFilter "box" "float xwidth" [0.5] "float ywidth" [0.5] 
+Accelerator "bvh" 
+"string splitmethod" "sah"
+"integer maxnodeprims" [4]
+Sampler "halton"
+"integer pixelsamples" [256]
+"bool samplepixelcenter" "false"
+Integrator "path"
+"integer maxdepth" [5]
+Scale -1 1 1 #avoid the 'flipped image' bug..
+LookAt	-7.499232769012451 -11.6544771194458 3.835031747817993
+	-6.999855995178223 -10.788092613220215 3.835031747817993
+	-2.182845371123676e-08 -3.787089042361913e-08 1.0
+
+Camera "perspective"
+"float fov" [35.0]
+WorldBegin
+
+	AttributeBegin
+		Transform [13.485746 0.000000 0.000000 0.000000 0.000000 13.929506 0.000000 0.000000 0.000000 0.000000 0.253991 0.000000 0.000000 -5.825538 0.000000 1.000000 ]
+		Material "matte"		
+		"float sigma" [0.0]		
+		"color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929]		
+		Shape "plymesh" "string filename" ["meshes/00001/floor_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [-0.000000 0.000000 -6.160568 0.000000 0.000000 10.485271 0.000000 0.000000 0.253991 0.000000 -0.000000 0.000000 -12.960178 -3.432564 6.011668 1.000000 ]
+		Material "matte"		
+		"float sigma" [0.0]		
+		"color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929]		
+		Shape "plymesh" "string filename" ["meshes/00001/left_wall_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [13.485746 0.000000 0.000000 0.000000 0.000000 13.658741 0.000000 0.000000 0.000000 0.000000 0.253991 0.000000 0.000000 -4.876014 12.224110 1.000000 ]
+		Shape "plymesh" "string filename" ["meshes/00001/ceiling_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [13.450475 0.000000 0.000000 0.000000 0.000000 0.356986 0.000000 0.000000 0.000000 0.000000 6.069673 0.000000 0.000000 7.261693 5.933994 1.000000 ]
+		Material "matte"		
+		"float sigma" [0.0]		
+		"color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929]		
+		Shape "plymesh" "string filename" ["meshes/00001/Cube_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [6.878101 0.000000 0.000000 0.000000 0.000000 2.286351 0.000000 0.000000 0.000000 0.000000 2.377126 0.000000 -2.331313 4.781355 0.999490 1.000000 ]
+		Material "matte"		
+		"float sigma" [0.0]		
+		"color Kd" [ 0.299150288105011 0.03374802693724632 0.0]		
+		Shape "plymesh" "string filename" ["meshes/00001/Cube.001_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [1.089892 -1.585265 0.000000 0.000000 0.180937 0.124397 0.000000 0.000000 0.000000 0.000000 3.512072 0.000000 7.975766 5.548468 3.762859 1.000000 ]
+		Material "metal"		
+		"color eta" [ 0.800000011920929 0.800000011920929 0.800000011920929]		
+		"color k" [ 0.28608500957489014 0.28608500957489014 0.28608500957489014]		
+		"float roughness" [0.38999998569488525]		
+		"float uroughness" [0.0]		
+		"float vroughness" [0.0]		
+		Shape "plymesh" "string filename" ["meshes/00001/Cube.003_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [13.119625 0.000000 0.000000 0.000000 0.000000 0.501682 0.000000 0.000000 0.000000 0.000000 6.079364 0.000000 0.372865 -13.779316 6.049877 1.000000 ]
+		Shape "plymesh" "string filename" ["meshes/00001/Cube.004_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [0.015938 -0.012082 0.000000 0.000000 0.012082 0.015938 0.000000 0.000000 0.000000 0.000000 0.020000 0.000000 -1.766237 4.711729 3.942472 1.000000 ]
+		Shape "plymesh" "string filename" ["meshes/00001/teapot_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [0.015938 -0.012082 0.000000 0.000000 0.012082 0.015938 0.000000 0.000000 0.000000 0.000000 0.020000 0.000000 0.784640 4.711729 3.942472 1.000000 ]
+		Material "metal"		
+		"color eta" [ 0.800000011920929 0.800000011920929 0.800000011920929]		
+		"color k" [ 0.8000000715255737 0.2098071277141571 0.043181587010622025]		
+		"float roughness" [0.18000000715255737]		
+		"float uroughness" [0.0]		
+		"float vroughness" [0.0]		
+		Shape "plymesh" "string filename" ["meshes/00001/teapot.001_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [0.015938 -0.012082 0.000000 0.000000 0.012082 0.015938 0.000000 0.000000 0.000000 0.000000 0.020000 0.000000 3.532274 4.711729 3.942472 1.000000 ]
+		Material "plastic"		
+		"color Kd" [ 0.017303703352808952 0.8000000715255737 0.0]		
+		"color Ks" [ 0.8000000715255737 0.7033360600471497 0.6752555966377258]		
+		"float roughness" [0.0]		
+		Shape "plymesh" "string filename" ["meshes/00001/teapot.002_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [-0.000000 0.000000 -6.160568 0.000000 0.000000 10.485271 0.000000 0.000000 0.253991 0.000000 -0.000000 0.000000 13.068892 -3.636566 6.011668 1.000000 ]
+		Material "matte"		
+		"float sigma" [0.0]		
+		"color Kd" [ 0.800000011920929 0.800000011920929 0.800000011920929]		
+		Shape "plymesh" "string filename" ["meshes/00001/left_wall.001_mat0.ply"]
+	AttributeEnd
+	
+
+	AttributeBegin
+		Transform [11.545485 0.000000 0.000000 0.000000 0.000000 0.195478 10.536198 0.000000 0.000000 -1.230638 0.022832 0.000000 10.082151 8.889522 4.982530 1.000000 ]
+		AreaLightSource "diffuse" "rgb L" [ 30.0 30.0 30.0 ]		
+		Shape "trianglemesh"
+		"point P" [
+		-1.0 -1.0 0.0 1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 -1.0 0.0 1.0 1.0 0.0 -1.0 1.0 0.0		
+		]
+		"normal N" [
+		0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0 0.0 0.0 1.0		
+		]
+		"float st" [
+		0.0 0.0 
+		1.0 0.0 
+		1.0 1.0 
+		0.0 0.0 
+		1.0 1.0 
+		0.0 1.0 
+		]
+		"integer indices" [
+		0 1 2 3 4 5 
+		]
+	AttributeEnd
+	
+
+WorldEnd
